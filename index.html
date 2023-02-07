@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Project</title>
+    <meta name="description" content="Welcome to E-commerce Project Soikat express">
+    
+</head>
+
+<!-- frnt awesome cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- font awesome cdn end -->
+<!-- custom css file -->
+<link rel="stylesheet" href="style.css">
+<!-- end custom css file -->
+<body>
+    <!-- navbar starts-->
+
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+
+    <nav  id="menu" class="hidden">
+        <ul class="nav-upper flex-around-space">
+            <li class="nav_list">
+                <a href="index.html" class="nav_link">Home</a>
+            </li>
+            <li class="nav_list">
+                <a href="index.html" class="nav_link">Register</a>
+            </li>
+            <li class="nav_list">
+                <a href="index.html" class="nav_link">Login</a>
+            </li>
+            <li class="nav_list">
+                <a href="index.html" class="nav_link">Logout</a>
+            </li>
+            <li class="nav_list">
+                <a href="index.html" class="nav_link">Contact</a>
+            </li>
+            <li class="nav_list">
+                <a href="index.html" class="nav_link">
+                    <img class="profile_icon" src="./images/profile.png" alt="profile icon"/>
+                </a>
+            </li>
+        </ul>
+        <ul class="nav-lower flex-around-space">
+            <li class="nav_list">
+                <a href="" class="nav_brand nav_link">Soikat Express</a>
+            </li>
+            <li class="nav_list">
+                <a href="" class="nav_link">
+                    <span>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                    Cart 2 Products-$120.40
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+    <!-- navbar ends -->
+    <header class="header">
+        <div class="banner flex-around-space">
+                <marquee class="banner_title" behavior="" direction="">UP To 60% Off Any Stock Item</marquee>
+            <div class="features flex-around-space">
+                <article class="feature flex-around-center">
+                    <i class="fa-solid fa-truck feature_icon"></i>
+                    <h3>Shipping Delivery WithIn 3 Days</h3>
+                </article>
+                <article class="feature flex-around-center">
+                    <i class="fa-brands fa-rocketchat feature_icon"></i>
+                    <h3>Support 24/7</h3>
+                </article>
+                <article class="feature flex-around-center">
+                    <i class="fa-regular fa-credit-card feature_icon"></i>
+                    <h3>Safe Payment</h3>
+                </article>
+            </div>
+        </div>
+        
+    </header>
+    <!-- main content starts -->
+    <main class="flex-around-center">
+        <div class="sidebar">
+            <section class="categories_section">
+                <h3 class="section_title">Categories</h3>
+                <ul class="list">
+                    <li class="list_item">
+                        <input type="checkbox">
+                        <label for="tele">Telephones</label>
+                    </li>
+                    <li class="list_item">
+                        <input type="checkbox" class="list-icon">
+                        <label for="tele">Tables</label>
+                    </li>
+                    <li class="list_item">
+                        <input type="checkbox" class="list-icon">
+                        <label for="tele">Computer</label>
+                    </li>
+                    <li class="list_item">
+                        <input type="checkbox" class="list-icon">
+                        <label for="tele">Mobile</label>
+                    </li>
+                </ul>
+           </section>
+
+           <section class="price_section">
+                <h3 class="section_title">Price Range</h3>
+                <ul class="list">
+                    <li class="list_item">
+                        <input type="radio" name="amount" id="">
+                        <label for="">$0-20$</label>
+                    </li>
+                    <li class="list_item">
+                        <input type="radio" name="amount" id="">
+                        <label for="">$25-40$</label>
+                    </li>
+                    <li class="list_item">
+                        <input type="radio" name="amount" id="">
+                        <label for="">$45-60$</label>
+                    </li>
+                    <li class="list_item">
+                        <input type="radio" name="amount" id="">
+                        <label for="">$100</label>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="shipping_section">    
+                <h3 class="section_title">Shipping Options</h3>
+                <ul class="list">
+                    <li class="list_item">
+                        <input type="radio" name="shipping" id="">
+                        <label for="">Free Shipping</label>
+                    </li>
+                    <li class="list_item">
+                        <input type="radio" name="shipping" id="">
+                        <label for="">Paid Shipping</label>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+
+        <div class="mian_contnet">
+            <section class="actions flex-around-space">
+                <div class="actions_sort">
+                    <label for="sort">Sort By:</label>
+                        <select name="sort" id="sort">
+                            <option value="first sold">Most First Sold</option>
+                            <option value="Most Search">Most Search Product</option>
+                            <option value="Treand Product">Most Treanding Product</option>
+                        </select>
+                    
+                </div>
+                
+                <div class="actions_search">
+                    <input type="text" placeholder="Search Here Product">
+                    <button class="btn"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            
+               
+            </section>    
+            
+            <section class="products">
+                <article class="product card">
+                    <div class="badge">
+                        <span>Stock 5 items</span>
+                        <hr class="hr_desgin">
+                        <span>Sold 5 items</span>
+                    </div>
+                    <img  class="product_image" src="./images/pro_1.jpg" alt="watch">
+                    <div class="product_body">
+                        <h2>Watch 01</h2>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                            <span class="dot blue"></span>
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                            alias adipisci nobis, esse voluptatum voluptatem ....
+                            <a href="#">read more</a>
+                        </p>
+                        <h3 class="product_price">$100</h3>
+                        <h4 class="product_rating">Rating 4.5</h4>
+                        <button class="btn product_button"> Add To Cart</button>
+                    </div>
+                    
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span>Stock 5 items</span>
+                        <hr class="hr_desgin">
+                        <span>Sold 5 items</span>
+                    </div>
+                    <img  class="product_image" src="./images/pro_1.jpg" alt="watch">
+                    <div class="product_body">
+                        <h2>Watch 01</h2>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                            <span class="dot blue"></span>
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                            alias adipisci nobis, esse voluptatum voluptatem ....
+                            <a href="#">read more</a>
+                        </p>
+                        <h3 class="product_price">$100</h3>
+                        <h4 class="product_rating">Rating 4.5</h4>
+                        <button class="btn product_button"> Add To Cart</button>
+                    </div>
+                    
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span>Stock 5 items</span>
+                        <hr class="hr_desgin">
+                        <span>Sold 5 items</span>
+                    </div>
+                    <img  class="product_image" src="./images/pro_1.jpg" alt="watch">
+                    <div class="product_body">
+                        <h2>Watch 01</h2>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                            <span class="dot blue"></span>
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                            alias adipisci nobis, esse voluptatum voluptatem ....
+                            <a href="#">read more</a>
+                        </p>
+                        <h3 class="product_price">$100</h3>
+                        <h4 class="product_rating">Rating 4.5</h4>
+                        <button class="btn product_button"> Add To Cart</button>
+                    </div>
+                    
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span>Stock 5 items</span>
+                        <hr class="hr_desgin">
+                        <span>Sold 5 items</span>
+                    </div>
+                    <img  class="product_image" src="./images/pro_1.jpg" alt="watch">
+                    <div class="product_body">
+                        <h2>Watch 01</h2>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                            <span class="dot blue"></span>
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                            alias adipisci nobis, esse voluptatum voluptatem ....
+                            <a href="#">read more</a>
+                        </p>
+                        <h3 class="product_price">$100</h3>
+                        <h4 class="product_rating">Rating 4.5</h4>
+                        <button class="btn product_button"> Add To Cart</button>
+                    </div>
+                    
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span>Stock 5 items</span>
+                        <hr class="hr_desgin">
+                        <span>Sold 5 items</span>
+                    </div>
+                    <img  class="product_image" src="./images/pro_1.jpg" alt="watch">
+                    <div class="product_body">
+                        <h2>Watch 01</h2>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                            <span class="dot blue"></span>
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                            alias adipisci nobis, esse voluptatum voluptatem ....
+                            <a href="#">read more</a>
+                        </p>
+                        <h3 class="product_price">$100</h3>
+                        <h4 class="product_rating">Rating 4.5</h4>
+                        <button class="btn product_button"> Add To Cart</button>
+                    </div>
+                    
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span>stock 5 items</span>
+                        <hr class="hr_desgin">
+                        <span>5 sold</span>
+                    </div>
+                    <img  class="product_image" src="./images/pro_1.jpg" alt="watch">
+                    <div class="product_body">
+                        <h2>Watch 01</h2>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                            <span class="dot blue"></span>
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                            alias adipisci nobis, esse voluptatum voluptatem ....
+                            <a href="#">read more</a>
+                        </p>
+                        <h3 class="product_price">$100</h3>
+                        <h4 class="product_rating">Rating 4.5</h4>
+                        <button class="btn product_button"> Add To Cart</button>
+                    </div>
+                    
+                </article>
+            </section>
+        </div>
+
+        
+        
+    </main>
+    <!-- main contents ends -->
+    <!-- footer starts -->
+    <footer class="footer flex-around-space">
+        <div class="flex-around-space">
+            <label for="subscriobe">Subscribe To NewsLatter:</label>
+            <input type="email" name="subscribe" class="footer_input" placeholder="Enter Your Email Address">
+            <button class="btn btn_subs">subscribe</button>
+         </div>
+         <div>
+            <p>&copy; CopyRight 2023 soikat.com All Rights.</p>
+         </div>
+    </footer>
+     
+    <!-- footer end -->
+    <!-- custom javaScript file -->
+    <script src="./scripts/index.js"></script>
+    <!-- end custom file -->
+</body>
+</html>
